@@ -1,0 +1,155 @@
+input[type=text] {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: white;
+    font-size: 16px;
+}
+
+.advancedSearchTextbox {
+    width: 225px;
+    margin-right: -4px;
+}
+
+.avatar {
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.button {
+    transition: 0.5s;
+    position: relative;
+    top: 50%;
+    background-color: #00000000;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 8px;
+    font-size: 20px;
+    min-height: 30px;
+    min-width: 110px;
+    font-family: 'Trebuchet MS';
+}
+
+.button:hover {
+    transition: 0.5s;
+    text-decoration: underline;
+    cursor: pointer;
+    border-color: #00000000;
+    background-color: #5f75f1;
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square {
+    width: 255px;
+    height: 255px;
+    position: relative;
+    background-color: #2542e9;
+    border-radius: 15px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.center_div {
+    transition: 0.5s;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 400px;
+    height: 400px;
+    background-color: #424b7e;
+}
+
+.center_text {
+  position: absolute;
+  top: 50%;
+  transform: translate(20%, -60%);
+  text-shadow: 2px 2px #94c2ff;
+}
+
+.projects {
+  border-radius: 15px;
+  width: 320px;
+  height: 425px;
+  background-color: #313f8c;
+  vertical-align: middle;
+}
+
+.projects:hover {
+  background-color: #6e78b9;
+}
+
+.bounce {
+  width: 250px;
+  height: 125px;
+  border-radius: 5px;
+  background-color: #6147e6;
+  box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
+  position: absolute;
+  -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  -moz-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  -o-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 87vw; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 87vw; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 87vw; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 87vw; }
+}
+
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 86vh; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 86vh; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 86vh; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 86vh; }
+}
+
+.wave:hover {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;     
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%;  
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+}
